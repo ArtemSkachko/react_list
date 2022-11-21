@@ -1,4 +1,5 @@
 import React from 'react';
+const homepage = 'https://artemskachko.github.io/react_list';
 
 export const User = ({id, email, first_name, last_name, avatar, onClickInvite, isInvited }) => (
   <li>
@@ -17,7 +18,7 @@ export const User = ({id, email, first_name, last_name, avatar, onClickInvite, i
     <img
         onClick={() => onClickInvite(id)}
         className="action"
-        src={`/assets/${isInvited? 'minus' : 'plus'}.svg`}
+        src={`${homepage}/assets/${isInvited? 'minus' : 'plus'}.svg`}
         alt="Action"
     />
   </li>
